@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Quote Generator</title>
-        <link rel="stylesheet" href="styles.css"/>
-    </head>
-    <body>
-        <h1>
-            Random Quote Generator
-        </h1>
-        <input type="text" id="author"/>
-        <input type="text" id="genre"/>
-        <input type="text" id="query"/>
-        <button id="submit">Submit</button>
-        <p id="nothing-to-see">This will disappear if you give me a click</p>
-        <script src="script.js"></script>
-    </body>
+
+<head>
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div id="content">
+        <h1>Random Quote Generator</h1>
+        <div id="explanation">
+            <p>Find just the right quote for the situation with the random quote generator!</p>
+            <br>
+            <p>
+                To use the quote generator, you can search for a specific author, a genre, or specific text.
+                However, if you're feeling lucky, you can just hit the go button and we will pick some for you!
+            </p>
+        </div>
+        <div id="query-form">
+            <div class="input-chunk">
+                <label class="query-label">Author</label>
+                <input type="text" class="query-input" id="author" placeholder="Search..." />
+            </div>
+            <div class="input-chunk">
+                <label class="query-label">Genre</label>
+                <input type="text" class="query-input" id="genre" placeholder="Search..." />
+            </div>
+            <div class="input-chunk">
+                <label class="query-label">Query</label>
+                <input type="text" class="query-input" id="query" placeholder="Search..." />
+            </div>
+        </div>
+        <button id="submit">Go!</button>
+        <div id="quote-container">
+        </div>
+        <div id="no-content">
+            <p id="oh-no">Oh no!</p>
+            <p>We weren't able to find anything that matched your request! Change your parameters and try again.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-items">
+            <p>View on <a target="_blank" href="https://github.com/maclaurin36/CS260-Javascript-Project">GitHub</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>
